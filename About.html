@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | James Betini</title>
+    <link rel ="icon" type="image/png" href="C:\2023-12712\Icon.png">
+    <link rel="stylesheet" href="About.css">
+ </head>
+
+ <body>
+   <!-- Navigation Bar -->
+     <nav> 
+     <ul>
+     <li><a href="HTML.html">HOME</a></li>
+     <li><a href="About.html">ABOUT</a></li>
+     <li><a href="View Projects.html">PROJECTS</a></li>
+     <li><a href="Contact.html">CONTACTS</a></li>
+     </ul>
+    </nav>
+
+   <!-- Hero Section -->
+     <section id="home" class="hero">
+        <div class="hero-content">
+        <b><h1>ABOUT ME</h1></b>
+        </div>
+     </section>
+
+   <!-- "WHAT YOU SHOULD KNOW" SECTION -->
+      <section id="home" class="what">
+       <div class="what-content">
+       <marquee scrollamount="10"><b><h1>WHAT YOU SHOULD KNOW!</h1></b></marquee>
+       </div>
+      </section>
+
+    <!-- "Image of "My" SECTION -->
+      <section id="home" class="Me">
+        <div class="Me-container">
+        <img src="Me.png" alt="Header Image">
+        </div>
+      </section>
+
+    <!-- About-content -->
+      <section id="home" class="Below">
+        <div class="Below-content">
+        </div>
+      </section>
+      
+    <!-- About Me Section -->
+      <section id="about" class="about">
+       <div class="about-content">
+       <b><h1>MY EXPERIENCE</h1></b>
+       <p>I'm an experienced frontend developer with a passion for creating visually stunning and highly functional web applications
+       I recently graduated from the "Advanced Fronted Certification Course" at New Horizon, where i honed my skills in the latest frontend technologies and best practices for five years.</p>
+       
+       Company Name: <b>New Horizons ICT Resource Center</b>
+       <p>Role: <b>Frontend Developer</b></p>
+       <p>Duration: <b>August 2019 - 2024</b></p>
+       <p>Responsibilities:</p>
+       1. Developing user-friendly web interfaces using HTML, CSS, and JavaScript.<p>
+       2. Collaborating with back-end developers to integrate user-facing elements with server-side logic.<p>
+       3. Optimizing applications for maximum speed and scalability.<p>
+
+         <b><h1>MY SKILLS</h1></b>
+       <section class="skills-section">
+         <div class="skill-category">
+         <h2>Frontend Development</h2>
+         <div class="progress-container">
+           <div class="progress-bar" style="width: 45%;"></div>
+         </div>
+         <p>HTML/CSS (45%)</p>
+      
+         <div class="progress-container">
+           <div class="progress-bar" style="width: 30%;"></div>
+         </div>
+         <p>JavaScript (30%)</p>
+      
+         <div class="skill-category">
+         <h2>Backend Development</h2>
+         <div class="progress-container">
+           <div class="progress-bar" style="width: 0%;"></div>
+         </div>
+         <p>Node.js (0%)</p>
+      
+         <div class="progress-container">
+           <div class="progress-bar" style="width: 0%;"></div>
+         </div>
+         <p>Express.js (0%)</p>
+      
+         <div class="skill-category">
+         <h2>Design</h2>
+         <div class="progress-container">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+          <p>Adobe Photoshop (80%)</p>
+      
+         <div class="progress-container">
+            <div class="progress-bar" style="width: 60%;"></div>
+         </div>
+          <p>Adobe Illustrator(60%)</p>
+      </section> <!-- Footer would be out of place if removed -->
+      
+       <b><h1>MY INTEREST</h1></b>
+        Outside of work, I'm passionate about staying updated on the latest trends and best practices in frontend development. 
+        I enjoys exploring new technologies and experimenting with innovative design patterns to enhance user engagement and usability. 
+        I'm actively involved in the local tech community, attending meetups and contributing to open-source projects related to frontend development.
+      </section>
+
+    <!-- Footer Section-->
+      <footer>   
+       <footer class="footer">
+       <div class="footer-content">
+        
+       <div class="icon-text">
+         <b><a href="HTML.html">HOME</a></b>
+       </div>  
+
+       <div class="icon-text"> 
+         <b><a href="About.html">ABOUT ME</a></b>
+       </div>
+
+       <div class="icon-text">
+         <b><a href="Contact.html">CONTACT ME</a></b>
+       </div>
+       </div> <!-- Footer would be out of place if removed -->
+       
+       <div class="copyright">
+          &copy; <span id="year"></span> James Betini | Portfolio Website, All Rights Reserved.
+        </div>
+    </footer>
+        
+    <script>
+      // Get current year and update copyright
+     document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+ </body>
+</html>

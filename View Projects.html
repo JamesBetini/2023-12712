@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projects | James Betini</title>
+   <link rel ="icon" type="image/png" href="C:\2023-12712\Icon.png">
+   <link rel="stylesheet" href="View Projects.css">
+ </head>
+
+  <body>
+    <!-- Navigation Bar -->
+     <nav>
+       <ul>
+         <li><a href="HTML.html">HOME</a></li>
+         <li><a href="About.html">ABOUT</a></li>
+         <li><a href="View Projects.html">PROJECTS</a></li>
+         <li><a href="Contact.html">CONTACTS</a></li>
+       </ul>
+     </nav>
+
+    <!-- List of Technology Section -->
+     <section id="home" class="Intro"> 
+       <div class="Intro-container">
+         <marquee  direction="left"scrollamount="10"><b><i>List of technologies used in the project (e.g HTML, CSS, JavaScript, etc.)</i></b></marquee>
+       </div>
+     </section>
+
+    <!-- Category Section-->
+     <div class="filter-buttons">
+       <button class="filter-btn" data-type="all">All</button>
+       <button class="filter-btn" data-type="testimonial">Testimonial</button>
+       <button class="filter-btn" data-type="calculator">Calculator</button>
+       <button class="filter-btn" data-type="counter">Counter</button>
+     </div>
+
+    <!-- Hero Section-->
+     <section id="home" class="hero">
+       <div class="hero-content">
+         <b><h1>MY PROJECTS</h1></b>
+       </div>
+     </section>
+         
+    <!-- Testimonial Slider -->
+     <div class="grid-container">   
+     <div class="grid-item" data-type="testimonial">
+       <h2>TESTIMONIAL SLIDER</h2>
+       <div class="Age-Size">
+       <h2>"The automatic testimonial slider dynamically displays customer testimonials in a slideshow format. Each slide features a user's photo, name, and a testimonial quote, transitioning smoothly to the next testimonial. This engaging component showcases positive feedback from customers, adding credibility and appeal to the website."</h2>
+      </div>
+
+      <div class="testimonial-container">
+       <img
+       src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+       alt="user-image"/>
+
+       <p class="text">
+         This is simply unbelievable! I would be lost without Apple. The very
+         best. Not able to tell you how happy I am with Apple.
+       </p>
+       <h4 class="username">Cherise G</h4>
+
+       </div>
+       <script src="Testimonial.js"></script>
+      </div>
+    
+    <!-- Age Calculator -->
+      <div class="grid-item" data-type="calculator">
+       <h2>AGE CALCULATOR</h2>
+       <div class="container">
+
+       <h1>Age Calculator</h1>
+       <div class="form">
+       <label for="birthday">Enter your date of birth</label>
+       <input type="date" id="birthday" name="birthday">
+       <button id="btn">Calculate Age</button>
+       <p id="result">Your age is 0 years old</p>
+       </div> <!-- Real-Time Character Counter would be out of place if removed -->
+       </div>
+
+       <script src="Age Calculator.js"></script>
+       <div class="Age-Size">
+         <h2>"The age calculator is a tool that allows users to input their date of birth and instantly calculate their age. It provides a simple and intuitive interface for users to enter their birthdate, and with a click of a button, it calculates and displays their age in years. This handy tool eliminates the need for manual calculations, providing quick and accurate results."</h2>
+       </div> <!-- Real-Time Character Counter would be out of place if removed -->
+      </div>
+              
+    <!-- Real-time Character Counter -->
+      <div class="grid-item" data-type="counter">
+       <h2>REAL-TIME CHARACTER COUNTER</h2>
+       <div class="Real-container">
+       <h2>Real-time Charater Counter</h2>
+       <textarea
+       id="textarea"
+       class="textarea"
+       placeholder="Please write your text here..."
+       maxlength="50"
+       ></textarea>
+
+       <div class="counter-container">
+         <p>
+           Total Charaters:
+           <span class="total-counter" id="total-counter"></span>
+         </p>
+
+         <p>
+           Remaining:
+           <span class="remaining-counter" id="remaining-counter"></span>
+         </p>
+
+         </div> <!-- Footer would be out of place if removed -->
+        </div>
+
+       <script src="Real Time Character.js"></script>
+       <div class="Age-Size">
+         <h2>"The real-time character counter is a useful tool that provides users with instant feedback on the number of characters they have typed in a text area. As users type, the counter updates in real time, showing the total number of characters entered and the remaining characters allowed."</h2>
+          </div> <!-- Footer would be out of place if removed -->
+       </div>
+      </div>
+
+      <script>
+       const filterButtons = document.querySelectorAll('.filter-btn');
+       const gridItems = document.querySelectorAll('.grid-item');
+            
+       filterButtons.forEach(button => {
+       button.addEventListener('click', () => {
+       const type = button.getAttribute('data-type');
+       gridItems.forEach(item => {
+       if (type === 'all' || item.getAttribute('data-type') === type) {
+       item.style.display = 'block';
+       } else {
+       item.style.display = 'none';
+       }
+       });
+       });
+       });
+     </script>
+
+    <!--Footer Section-->
+     <footer>
+     <footer class="footer">
+       <div class="footer-content">
+
+       <div class="icon-text">
+         <b><a href="HTML.html">HOME</a></b>
+       </div>
+
+       <div class="icon-text"> 
+         <b><a href="About.html">ABOUT ME</a></b>
+       </div>
+
+       <div class="icon-text">
+         <b><a href="Contact.html">CONTACT ME</a></b>
+       </div>
+       </div>
+
+       <div class="copyright">
+        &copy; <span id="year"></span> James Betini | Portfolio Website, All Rights Reserved.
+       </div>
+     </footer>
+     </footer>
+   
+  </body>
+
+</html>
+

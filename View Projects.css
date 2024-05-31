@@ -1,0 +1,386 @@
+/* Reset styles */
+  body, html {
+   margin: 0;
+   padding: 0;
+   font-family:monospace;
+   font-size: 25px;
+   background-image: url('About.jpg');
+   background-size: cover;
+  }
+
+
+/* Navigation Bar */
+  nav {
+   background-image: url(About.jpg);
+   border: 10px solid rgb(0, 0, 0);
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-radius: 0px;
+   padding: 15px;
+  }
+
+  nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 25px;
+  }
+
+  nav ul li {
+   display: inline;
+   border-radius: 10px;
+   border:5px solid #2e0606;
+   margin-right: 30px;
+  }
+
+  nav ul li a {
+   color: rgb(207, 207, 207);
+   text-decoration: none;
+   transition: 0.5s;
+  }
+
+  nav ul li a:hover {
+   border-radius: 10px;
+   color: rgb(185, 0, 12);
+  }
+
+
+/* Style for Hero Section */
+  .hero {
+   background-image: url('Hero.jpg');
+   background-size: cover;
+   color: #dadada;
+   padding: 50px;
+   text-align: center;
+   font-size: 60px;
+   font-style: Bold;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  } 
+
+
+/* Style of List of Technology Section */
+  .Intro{
+    background-color: #750f0f;
+    background-size: cover;
+    font-family:'Calibri';
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: #e4e4e4;
+   }
+  
+  
+/* Style for Footer Section */
+  .footer {
+   background-image: url(Pop.jpg);
+   background-size: cover;
+   color: #ffffff;
+   padding: 2px;
+   text-align: center;
+   border-top: 10px solid #000000;
+  }
+    
+  .footer-content {
+   display: flex;
+   justify-content: center;
+  }
+    
+
+/* Style for Footer Text*/
+  .icon-text {
+   margin: 0 20px;
+  }
+    
+  .icon-text a {
+   display: inline-block;
+   margin-top: 5px;
+   border: 5px solid #000000;
+   border-radius: 20px;
+   padding: 5px 10px;
+   text-decoration: none;
+   color: #000000a8;
+  }
+    
+  .icon-text a:hover {
+  background-color: #757575;
+  }
+    
+
+/* Style for copyright text */
+  .copyright {
+   margin-top: 20px;
+   font-size: 14px;
+  }
+
+
+/* Style for each grid item */
+  .grid-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   gap: 20px; 
+  }  
+
+  .grid-item {
+   padding: 1px;
+   border: 20px solid #131313;
+   background-color: #616161;
+  }
+
+  
+/* Style for Testimonial Container */
+  .testimonial-container {
+   width: 90%; /* Use a percentage width */
+   max-width: 500px; /* Set a maximum width */
+   background-color: rgb(43, 43, 43);
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   padding: 70px 20px;
+   margin: 70px auto; /* Center the slider horizontally */
+   color: white;
+   position: relative;
+  }
+    
+   img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    }
+    
+   .username {
+     font-size: 13px;
+     font-weight: 100;
+  }
+
+
+/* Style for Age Calculator*/
+  .container {
+   background-color: rgba(107, 12, 12, 0.966);
+   width: 90%; /* Use percentage width for responsiveness */
+   max-width: 400px; /* Set a maximum width */
+   padding: 20px;
+   margin: 5px auto; /* Center the container horizontally */
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+    
+  h1 {
+   font-size: 36px;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 20px;
+  }
+    
+  .form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+    
+  label {
+   font-weight: bold;
+   margin-bottom: 10px;
+  }
+    
+  input {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 100%;
+   max-width: 300px;
+  }
+    
+  button {
+  background-color:rgb(53, 53, 53);
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+  }
+    
+  button:hover {
+   background-color: #1d1d1d;
+  }
+    
+  #result {
+   margin-top: 20px;
+   font-size: 24px;
+   font-weight: bold;
+  }
+
+
+/*Style for Real Time Character Counter*/
+  .Real-container {
+   background-color: rgb(53, 53, 53);
+   width: 90%; /* Use percentage width for responsiveness */
+   max-width: 400px; /* Set a maximum width */
+   padding: 20px;
+   margin: 5px auto; /* Center the container horizontally */
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+    
+    .textarea {
+      resize: none;
+      width: 100%;
+      height: 100px;
+      font-size: 18px;
+      font-family: sans-serif;
+      padding: 10px;
+      box-sizing: border-box;
+      border: solid 2px darkgray;
+    }
+    
+    .counter-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5px;
+    }
+    
+    .counter-container p {
+      font-size: 18px;
+      color: gray;
+    }
+    
+    .total-counter {
+      color: rgb(0, 0, 0);
+    }
+    
+    .remaining-counter {
+      color: rgb(43, 255, 0);
+    }
+
+
+/*Style for grid-container words*/
+  .Age-Size{
+   font-family: Arial;
+   font-size: 15px;
+  }
+
+@media only screen and (max-width: 2000px) {
+ /* Styles for screens up to 768px wide (tablets and smaller) */
+    body, html {
+     overflow-x: auto;
+     margin: 0;
+     padding: 0;
+     font-size: 18px;
+    }
+
+    .hero {
+      padding: 30px;
+      font-size: 40px;
+    }
+
+    .about {
+      padding: 40px;
+    }
+      
+    .about-content{
+     font-size: 20px;
+    }
+
+    nav ul li {
+     width: 30%;
+     margin-right: 0; /* Reset margin for smaller screens */
+     margin-bottom: 10px; /* Add spacing between navigation items */
+     display: block; /* Display items as block elements */
+     white-space: normal; /* Reset white-space for smaller screens */
+     overflow: visible; /* Reset overflow for smaller screens */
+    }
+
+    .grid-container {
+     grid-template-columns: repeat(1, 1fr); /* Single column layout for smaller screens */
+     gap: 5px; /* Reduce gap between grid items */
+     padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .grid-item {
+     padding: 5px; /* Adjust padding for grid items on smaller screens */
+    }
+
+    .testimonial-container {
+     padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+
+    img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: -50px;
+    }
+
+    .Real-container {
+     padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+ /* Styles for screens up to 480px wide (phones) */
+  body, html {
+   overflow-x: auto;
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+  }
+
+  .hero {
+   padding: 20px;
+   font-size: 30px;
+  }
+
+  .about {
+   padding: 20px;
+  }
+
+  .about-content{
+   font-size: 20px;
+  }
+
+  .grid-container {
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+   grid-template-columns: repeat(1, 1fr); /* Single column layout for smaller screens */
+   gap: 5px; /* Reduce gap between grid items */
+   padding: 5px; /* Adjust padding for smaller screens */
+  }
+    
+  .grid-item {
+   overflow-x: hidden;
+   margin: 0;
+   padding: 5px; /* Adjust padding for grid items on smaller screens */
+  }
+
+  .testimonial-container {
+   padding: 40px 10px; /* Adjust padding for smaller screens */
+  }
+
+  img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: -50px;
+  }
+
+  .Real-container {
+   padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+    
+   
+
+        
+      
+    
+    

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | James Betini</title>
+    <link rel ="icon" type="image/png" href="C:\2023-12712\Icon.png">
+    <link rel="stylesheet" href="Contact.css">
+ </head>
+
+ <body>
+    <!-- Navigation Bar -->
+     <nav>
+       <ul>
+       <li><a href="HTML.html">HOME</a></li>
+       <li><a href="About.html">ABOUT</a></li>
+       <li><a href="View Projects.html">PROJECTS</a></li>
+       <li><a href="Contact.html">CONTACTS</a></li>
+       </ul>
+     </nav>
+
+
+    <!-- Image Slider Section-->
+     <div class="slider-container">
+       <img class="slider-image active" src="Name I.png" alt="Image 1">
+       <img class="slider-image" src="Name II.png" alt="Image 2">
+       <img class="slider-image" src="Name III.png" alt="Image 3">
+     </div>
+
+
+     <script>
+       // JavaScript for Image Slider (Dynamic Content Loading)
+       let currentImageIndex = 0;
+       const images = document.querySelectorAll('.slider-image');
+
+       setInterval(() => {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add('active');
+       }, 3000);
+      </script>
+
+
+    <!-- Hero Section-->
+     <section id="home" class="hero">
+       <div class="hero-content">
+         <b><h1>CONTACT ME</h1></b>
+       </div>
+     </section>
+
+
+    <!--Call Me Section-->
+     <section id="home" class="Intro"> 
+       <div class="Intro-container">
+         <marquee  direction="left"scrollamount="9"><b><i>Call Me: 08147364743 - Email: betinijames@gmail.com</i></b></marquee>
+       </div>
+     </section>
+        
+
+    <!-- Contact Section -->
+     <section id="contact" class="contact">
+       <div class="contact-form">
+         <h2>Send Me a Message</h2>
+         <form id="contactForm" action="https://formspree.io/f/xbjnbokq" method="POST">
+           <input type="text" name="name" placeholder="Your Name" required>
+           <input type="email" name="email" placeholder="Your Email" required>
+           <textarea name="message" placeholder="Your Message" required></textarea>
+           <button type="submit">Send</button>
+         </form>
+       </div>
+      </section>
+
+
+    <!-- Footer Section-->
+     <footer>
+       <footer class="footer">
+       <div class="footer-content">
+
+       <div class="icon-text">
+         <b><a href="HTML.html">HOME</a></b>
+       </div>
+
+       <div class="icon-text"> 
+         <b><a href="About.html">ABOUT ME</a></b>
+       </div>
+
+       <div class="icon-text">
+         <b><a href="Contact.html">CONTACT ME</a></b>
+       </div>
+       </div> <!-- Footer would be out of place if removed -->
+
+       <div class="copyright">
+         &copy; <span id="year"></span> James Betini | Portfolio Website, All Rights Reserved.
+       </div>
+     </footer>
+     </footer>
+              
+    <script>
+      // Javascript to get current year and update copyright
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+ </body>
+</html>

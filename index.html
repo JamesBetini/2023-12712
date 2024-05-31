@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Portfolio Website | James Betini</title>
+   <link rel ="icon" type="image/png" href="C:\2023-12712\Icon.png">
+   <link rel="stylesheet" href="CSS.css">
+   <link rel="stylesheet" href="CSS Responisve.css">
+ </head>
+
+ <body>
+    <!-- Navigation Bar -->
+     <nav>
+     <ul>
+       <li><a href="HTML.html">HOME</a></li>
+       <li><a href="About.html">ABOUT</a></li>
+       <li><a href="View Projects.html">PROJECTS</a></li>
+       <li><a href="Contact.html">CONTACTS</a></li>
+     </ul>
+     </nav>
+
+   <!-- Intro Section -->
+     <section id="home" class="Intro"> 
+     <div class="Intro-container">
+       <marquee  direction="left"scrollamount="10"><b><i>Hi, My Name is James Betini, I'm a Web Developer Seeking to be your "Senior Frontend Developer"</i></b></marquee>
+     </div>
+     </section>
+
+    <!-- Hero Section -->
+     <section id="home" class="hero">
+       <div class="header-container">
+         <img src="Home Icon.png" alt="Header Image">
+       </div>
+
+       <div class="hero-content">
+         <b><h1>Welcome To My Portfolio Website</h1></b>
+         <p>Illustrating My Skills, Projects and Experiences</p>
+         <b><a href="About.html" class="btn">Learn More</a></b>
+       </div>
+     </section>
+
+   <!-- Footer Section -->
+      <footer>
+       <footer class="footer">
+         <div class="footer-content">
+           <div class="icon-text">
+           <b><a href="HTML.html">HOME</a></b>
+           </div>  
+
+           <div class="icon-text"> 
+           <b><a href="About.html">ABOUT ME</a></b>
+           </div>
+
+           <div class="icon-text">
+           <b><a href="Contact.html">CONTACT ME</a></b>
+           </div>
+         
+           </div>
+           <div class="copyright">
+           &copy; <span id="year"></span> James Betini | Portfolio Website, All Rights Reserved.
+           </div>
+     
+        </footer>
+     </footer>
+          
+     <script>
+       // JavaScript to get current year and update copyright
+       document.getElementById("year").textContent = new Date().getFullYear();
+     </script>
+
+   
+  </body>
+ 
+</html>
